@@ -8,7 +8,7 @@ function btn() {
       variant="contained"
       style={{ backgroundColor: "#FF6E3C", color: "#FFFFFF" }} // Setting background and text color
       sx={{
-        fontSize:"20px",
+        fontSize:{lg:"20px", md:"20px", sm:"18px", xs:"16px"},
         fontWeight:"bold",
         padding: "10px",
         "&:hover": {

@@ -6,17 +6,19 @@ function smsList({ title, text }) {
   return (
     <Grid container mt={0.7} sx={{ display: "flex" }}>
       <Grid
+      container
+      gap={2}
         mt={2}
-        lg={11}
+        lg={12}
         md={12}
         sm={12}
         xs={12}
         sx={{ display: "flex", alignItems: "center" }}
       >
         <Grid
-          p={2}
+          p={0}
           lg={1}
-          
+          item
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -32,13 +34,13 @@ function smsList({ title, text }) {
             }}
           />
         </Grid>
-        <Grid md={5} sm={6} xs={8}>
-          <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+        <Grid item md={5} sm={4} lg={3.2} xs={10}>
+          <Typography sx={{ fontSize: {lg:"18px", md:"18px", sm:"16px"}, fontWeight: "bold" }}>
             {title} &nbsp;
           </Typography>
         </Grid>
-        <Grid md={8} sm={6} xs={10}>
-          <Typography sx={{ fontSize: "18px" }}>{text}</Typography>
+        <Grid item md={5} lg={6} sm={5} xs={12}>
+          <Typography sx={{ fontSize: {lg:"18px", md:"18px", sm:"16px"} }}>{text}</Typography>
         </Grid>
       </Grid>
     </Grid>

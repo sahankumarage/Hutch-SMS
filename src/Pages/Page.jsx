@@ -40,7 +40,7 @@ function Page() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000 
+      duration: 1800 
     });
   }, []); 
 
@@ -151,7 +151,7 @@ function Page() {
 
   function ConditionList({ Conditions }) {
     return (
-      <Grid container data-aos="fade-up">
+      <Grid container>
         {Conditions.map((packageData, index) => (
           <TextList key={index} {...packageData} />
         ))}
@@ -194,12 +194,12 @@ function Page() {
         }}
       >
         <Grid data-aos="fade-up"  mb={4} lg={8} md={10} sm={10} xs={11}>
-          <Typography   sx={{ fontWeight: "bold", fontSize: "28px" }}>
+          <Typography   sx={{ fontWeight: "bold", fontSize: {lg:"28px", sm:"24px", xs:"20px"} }}>
             Revolutionize Your Business with <br /> ‘ReachOut’ SMS Marketing
             Platform
           </Typography>
 
-          <Typography pt={1} sx={{ fontSize: "18px" }}>
+          <Typography pt={1} sx={{ fontSize: {lg:"18px", sm:"18px", xs:"16px"}   }}>
             Now, you can register your account by logging into the portal and{" "}
             <br /> creating a User ID to send SMS messages to your contacts
             within <br /> few Clicks!
@@ -224,41 +224,43 @@ function Page() {
           sm={10}
           xs={11}
           textAlign={{ lg: "start", md: "start" }}
+          data-aos="fade-up"
         >
           <Typography
-            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px" } }}
+            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px", sm:"24px", xs:"20px" } }}
           >
             Are you ready to take your business to new heights of growth? Unlock
             the power of SMS marketing with our cutting-edge platform!
           </Typography>
         </Grid>
-        <Grid mt={2} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
-          <Typography sx={{ fontSize: { lg: "18px", md: "18px" } }}>
+        <Grid data-aos="fade-up" mt={2} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
+          <Typography sx={{ fontSize: { lg: "18px", md: "18px", sx:"16px" } }}>
             SMS marketing has become a game-changer in the world of business
             communication. It’s the art of sending targeted text messages to
             your customers, and it’s more effective than ever before.
           </Typography>
         </Grid>
-        <Grid mt={3} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
+        <Grid data-aos="fade-up" mt={3} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
           <Typography
-            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px" } }}
+            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px", sm:"24px", xs:"20px" } }}
           >
             What is Maraketing?
           </Typography>
-          <Typography mt={2} sx={{ fontSize: { lg: "18px", md: "18px" } }}>
+          <Typography mt={2} sx={{ fontSize: { lg: "18px", md: "18px", sm:"16px" } }}>
             SMS marketing is a powerful tool that allows businesses to send
             personalized and timely messages to customers’ mobile phones. Unlike
             other marketing channels, SMS has an astonishing open rate of 98%,
             ensuring that your messages gets noticed.
           </Typography>
         </Grid>
-        <Grid item mt={3} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
+        <Grid  item mt={3} lg={8} md={10} sm={10} xs={11} textAlign={"start"}>
           <Typography
-            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px" } }}
+          data-aos="fade-up"
+            sx={{ fontWeight: "bold", fontSize: { lg: "28px", md: "24px", sm:"24px", xs:"20px" } }}
           >
             Why Do You Need SMS Marketing?
           </Typography>
-          <Typography mt={2} sx={{ fontSize: { lg: "18px", md: "18px" } }}>
+          <Typography data-aos="fade-up" mt={2} sx={{ fontSize: { lg: "18px", md: "18px" } }}>
             In today’s competitive market, standing out is crucial. SMS
             marketing allows you to connect with your customers in a direct and
             personal way. Whether you’re a startup, a small local business, a
@@ -266,7 +268,7 @@ function Page() {
             help you:
           </Typography>
 
-          <Grid lg={12} md={12} sm={12} mt={3}>
+          <Grid data-aos="fade-up" lg={12} md={12} sm={12} mt={3}>
             <List
               title="Boost Engagement : "
               text="SMS messages have a much higher open and response rate compared to emails or social media."
@@ -298,6 +300,7 @@ function Page() {
         }}
       >
         <Grid
+        data-aos="fade-up"
           item
           lg={8}
           md={10}
@@ -308,7 +311,7 @@ function Page() {
           <Grid>
             <Typography
               sx={{
-                fontSize: { lg: "28px", md: "28px", sm: "20px" },
+                fontSize: { lg: "28px", md: "28px", sm: "24px", xs:"20px" },
                 fontWeight: "bold",
               }}
             >
@@ -361,6 +364,7 @@ function Page() {
       </Grid>
 
       <Grid
+      data-aos="fade-up"
         mt={6}
         pb={5}
         container
@@ -371,11 +375,11 @@ function Page() {
           justifyContent: "center",
         }}
       >
-        <Grid mt={1} item lg={8} md={10} sm={10} xs={11} display={"flex"}>
+        <Grid  mt={1} item lg={8} md={10} sm={10} xs={11} display={"flex"}>
           <Grid mt={4} item lg={12} md={12} sm={12} xs={12} textAlign={"start"}>
             <Typography
               sx={{
-                fontSize: { lg: "28px", md: "24px", xs: "18px" },
+                fontSize: { lg: "28px", md: "24px", sm:"24px", xs: "20px" },
                 fontWeight: "bold",
               }}
             >
@@ -400,6 +404,7 @@ function Page() {
             </Grid>
           </Grid>
           <Grid
+          data-aos="fade-up"
             mt={15}
             alignItems={"center"}
             item
@@ -426,6 +431,7 @@ function Page() {
         }}
       >
         <Grid
+        data-aos="fade-up"
           mt={6}
           item
           lg={8}
@@ -438,7 +444,7 @@ function Page() {
           <Grid lg={12} sm={12} md={12} xs={12}>
             <Typography
               textAlign={"center"}
-              sx={{ fontWeight: "bold", fontSize: "28px" }}
+              sx={{ fontWeight: "bold", fontSize: {lg:"28px", md:"28px", sm:"24px", xs:"20px"} }}
             >
               Registration Type and the Benefits
             </Typography>
@@ -492,7 +498,7 @@ function Page() {
                     onChange={handleRadioChange}
                     name="radio-buttons-group"
                     sx={{
-                      width: { lg: "60vh", md: "60vh", sm: "40vh", xs: "30vh" },
+                      width: { lg: "60vh", md: "60vh", sm: "40vh", xs: "35vh" },
                     }}
                   >
                     <FormControlLabel
@@ -553,13 +559,13 @@ function Page() {
                   </RadioGroup>
                 </FormControl>
               </Grid>
-              <Grid mt={8} display={"flex"} justifyContent={"center"}>
-                <Typography sx={{ fontSize: "28px", fontWeight: "bold" }}>
-                  One time bundled offer
+              <Grid data-aos="fade-up" mt={8} display={"flex"} justifyContent={"center"}>
+              <Typography p={2} sx={{ fontSize: {lg:"28px", md:"28px", sm:"24px"}, fontWeight: "bold", border: "1px solid #FF6E3C", borderRadius:"15px" }}>
+                  One Time Bundled Offer
                 </Typography>
               </Grid>
 
-              <Grid container mt={6} rowGap={2} display={"flex"}>
+              <Grid container mt={2} rowGap={2} display={"flex"}>
                 {selectedValue === "br" ? (
                   <PackageList packages={packageBr} />
                 ) : (
@@ -567,14 +573,14 @@ function Page() {
                 )}
               </Grid>
 
-              <Grid mt={4} item lg={12} sm={12} md={12} xs={12}>
+              <Grid data-aos="fade-up" mt={4} item lg={12} sm={12} md={12} xs={12} >
                 <Typography
                   mb={3}
                   sx={{
-                    fontSize: "24px",
+                    fontSize: {lg:"28px", md:"28px", sm:"24px", xs:"20px"},
                     fontWeight: "bold",
                     display: "flex",
-                    justifyContent: "center",
+                    justifyContent: "start",
                   }}
                 >
                   Terms & Conditions
@@ -593,6 +599,7 @@ function Page() {
 
       <Grid
         mt={4}
+        
         container
         sx={{
           backgroundColor: "#fff8eb",
@@ -601,19 +608,19 @@ function Page() {
           justifyContent: "center",
         }}
       >
-        <Grid pb={5} mt={3} item lg={8} md={10} sm={10} xs={10}>
+        <Grid data-aos="fade-up" pb={5} mt={3} item lg={8} md={10} sm={10} xs={10}>
           <Grid item lg={12} md={12} textAlign={"center"}>
-            <Typography sx={{ fontSize: "28px", fontWeight: "bold" }}>
+            <Typography sx={{ fontSize: {lg:"28px", md:"28px", sm:"24px", xs:"20px"}, fontWeight: "bold" }}>
               Account Type and the Benefits
             </Typography>
-            <Typography mt={3} sx={{ fontSize: "18px" }}>
+            <Typography mt={3} sx={{ fontSize:{lg:"18px", md:"18px", sm:"16px"} }}>
               Your benefits depend on the chosen Account Type. Yet, you can
               upgrade your Account to enjoy additional benefits as outlined in
               the rate card table below
             </Typography>
           </Grid>
 
-          <Grid container mt={6} rowGap={2} display={"flex"}>
+          <Grid container data-aos="fade-up" mt={6} rowGap={2} display={"flex"}>
             <RateCard title="Intro" price="1500" smsCost="2.00" />
             <RateCard title="Starter" price="3500" smsCost="1.50" />
             <RateCard title="Growth" price="5500" smsCost="1.00" />
@@ -624,6 +631,7 @@ function Page() {
 
       <Grid
         mt={3}
+        data-aos="fade-up"
         container
         sx={{
           width: "100%",
@@ -642,8 +650,8 @@ function Page() {
           sm={10}
           xs={10}
         >
-          <Grid item lg={6} md={12} sm={12} xs={12}>
-            <Typography sx={{ fontSize: "28px", fontWeight: "bold" }}>
+          <Grid  item lg={6} md={12} sm={12} xs={12}>
+            <Typography sx={{ fontSize: {lg:"28px", md:"28px", xs:"20px"}, fontWeight: "bold" }}>
               Terms & Conditions
             </Typography>
             <Grid lg={11} md={12} sm={12} mt={3}>
@@ -653,7 +661,7 @@ function Page() {
             </Grid>
           </Grid>
           <Grid item mt={{ md: 6, lg: 0, sm: 6, xs: 6 }} lg={6} md={12} xs={12}>
-            <Typography sx={{ fontSize: "28px", fontWeight: "bold" }}>
+            <Typography sx={{  fontSize: {lg:"28px", md:"28px", xs:"20px"}, fontWeight: "bold" }}>
               Promotional SMS
             </Typography>
             <Typography mt={2.2} sx={{ fontSize: "16px" }}>
@@ -663,7 +671,7 @@ function Page() {
               messages.
             </Typography>
 
-            <Typography mt={3} sx={{ fontSize: "28px", fontWeight: "bold" }}>
+            <Typography mt={3} sx={{  fontSize: {lg:"28px", md:"28px", xs:"20px"}, fontWeight: "bold" }}>
               Transactional SMS
             </Typography>
             <Typography mt={2} sx={{ fontSize: "16px" }}>
@@ -676,7 +684,8 @@ function Page() {
       </Grid>
 
       <Grid
-        mt={6}
+        mt={2}
+        
         pb={6}
         container
         sx={{
@@ -686,11 +695,11 @@ function Page() {
           justifyContent: "center",
         }}
       >
-        <Grid mt={6} item lg={8} md={10} sm={10} xs={10} display={"flex"}>
+        <Grid data-aos="fade-up"  item lg={8} md={10} sm={10} xs={10} display={"flex"}>
           <Grid mt={2} item lg={12} md={12} sm={12} textAlign={"center"}>
             <Typography
               sx={{
-                fontSize: { lg: "28px", md: "24px", sm: "24px" },
+                fontSize: { lg: "28px", md: "28px", sm: "24px", xs:"20px" },
                 fontWeight: "bold",
               }}
             >
@@ -711,17 +720,20 @@ function Page() {
         </Grid>
         <Grid
           lg={12}
+          data-aos="fade-up"
           md={12}
           sm={12}
+          xs={12}
           justifyContent={"center"}
           display={"flex"}
         >
-          {/* <Grid mt={6} item lg={8} md={10} sm={12} xs={11} display={"flex"} justifyContent={"center"}>
+          <Grid mt={6} item lg={8} md={10} sm={12} xs={12} display={"flex"} justifyContent={"center"}>
             <SmsTable />
-          </Grid> */}
+          </Grid>
         </Grid>
         <Grid
           mt={6}
+          data-aos="fade-up"
           lg={12}
           md={12}
           sm={10}
@@ -732,14 +744,14 @@ function Page() {
           <Grid  item lg={8} md={8} justifyContent={"start"}>
             <Typography
               sx={{
-                fontSize: { lg: "28px", md: "24px", sm: "24px" },
+                fontSize: { lg: "28px", md: "22px", sm: "24px", xs:"20px" },
                 fontWeight: "bold",
               }}
             >
               Terms & Conditions
             </Typography>
 
-            <Grid mt={4}>
+            <Grid mt={2}>
               <TextList text="Rates mentioned include the current Government Tax; changes will apply." />
               <TextList text="The SMS quota/number of SMS units applies to all mobile networks in Sri Lanka (Flat Rate for All Networks)." />
               <TextList text="The SMS validity period for the SMS Pack is subject to your registration type, i.e., BR or NIC." />
@@ -756,6 +768,7 @@ function Page() {
           md={8}
           sm={10}
           xs={10}
+          data-aos="fade-up"
           p={3}
           sx={{
             backgroundColor: "white",
@@ -766,7 +779,7 @@ function Page() {
           <Typography
             textAlign={"center"}
             sx={{
-              fontSize: { lg: "28px", md: "22px", sm: "20px" },
+              fontSize: { lg: "28px", md: "28px", sm: "24px", xs:"20px" },
               fontWeight: "bold",
             }}
           >
@@ -793,7 +806,7 @@ function Page() {
                 color={"white"}
                 textAlign={"center"}
                 sx={{
-                  fontSize: { lg: "18px", md: "18px", sm: "20px" },
+                  fontSize: { lg: "18px", md: "18px", sm: "18px" },
                 }}
               >
                 Try our platform for free with a demo package and make a start
@@ -817,7 +830,7 @@ function Page() {
                 color={"black"}
                 textAlign={"center"}
                 sx={{
-                  fontSize: { lg: "18px", md: "18px", sm: "20px" },
+                  fontSize: { lg: "18px", md: "18px", sm: "18px" },
                 }}
               >
                 Schedule an appointment with our experts for a personalized
@@ -830,7 +843,7 @@ function Page() {
             color={"black"}
             textAlign={"center"}
             sx={{
-              fontSize: { lg: "18px", md: "18px", sm: "18px", xs: "16px" },
+              fontSize: { lg: "18px", md: "18px", sm: "16px", xs: "16px" },
             }}
           >
             Don’t miss out on the opportunity to engage, convert, and retain

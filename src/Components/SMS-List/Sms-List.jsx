@@ -31,8 +31,8 @@ function smsList({text}) {
           />
         </Grid>
         
-        <Grid md={8}>
-          <Typography sx={{ fontSize:{lg:"16px" , md:"14px", sm:"14px", xs:"13px"} }}>{text}</Typography>
+        <Grid lg={12} md={12}>
+          <Typography sx={{ fontSize:{lg:"16px" , md:"16px", sm:"16px", xs:"14px"} }}>{text}</Typography>
         </Grid>
       </Grid>
     </Grid>

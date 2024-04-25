@@ -35,7 +35,7 @@ function RateCard({ title, price, smsCost }) {
           }}
         >
           <Grid item pt={3} display={"flex"} justifyContent={"center"}>
-            <Typography sx={{ fontSize: "18.72px", fontWeight: "bold" }}>
+            <Typography sx={{ fontSize: "22px", fontWeight: "bold" }}>
               {title}
             </Typography>
           </Grid>
